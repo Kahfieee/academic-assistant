@@ -50,28 +50,43 @@ Seluruh modul skill tersimpan di `.agents/skills/` (serta `.skills/` untuk kompa
 
 ```text
 academic-assistant/
-├── .agents/skills/                   # Modul AI Agent Skills terintegrasi
-│   ├── academic-paper/
-│   ├── academic-paper-reviewer/
-│   ├── academic-pipeline/
-│   ├── deep-research/
-│   ├── sr-screener/
-│   ├── menulis-skripsi/
-│   ├── skripsi-to-ieee/
-│   └── shared/
-├── templates/                        # Master Template Dokumen Akademik Universal
-│   ├── formal_thesis_template.docx   # Template Microsoft Word (Margin 4-4-3-3 cm)
-│   └── formal_thesis_template.pdf    # Referensi Layout PDF (Penomoran Romawi & Arab)
-├── assets/                           # Placeholder logo institusi untuk sampul
+├── .agents/
+│   ├── rules/
+│   │   └── mandatory-academic-standards.md   # Aturan baku otomatis (always-on)
+│   └── skills/                               # Modul AI Agent Skills terintegrasi
+│       ├── academic-paper/
+│       ├── academic-paper-reviewer/
+│       ├── academic-pipeline/
+│       ├── deep-research/
+│       ├── sr-screener/
+│       ├── menulis-skripsi/
+│       ├── skripsi-to-ieee/
+│       └── shared/
+├── templates/                                # Master Template Skripsi & Jurnal
+│   ├── TEMPLATE_SKRIPSI_DAN_JURNAL.md        # Blueprint ketentuan wajib & kerangka bab
+│   ├── formal_thesis_template.docx           # Template Microsoft Word (Margin 4-4-3-3 cm)
+│   └── formal_thesis_template.pdf            # Referensi Layout PDF (Penomoran Romawi & Arab)
+├── assets/                                   # Placeholder logo institusi untuk sampul
 │   └── university_logo_placeholder.png
-├── tools/                            # Skrip generator dokumen otomatis (DOCX & PDF)
+├── tools/                                    # Skrip generator dokumen otomatis (DOCX & PDF)
 │   ├── build_pdf.py
 │   ├── generate_docx.js
 │   └── package.json
-├── LICENSE                           # Informasi Lisensi (MIT & CC BY-NC 4.0)
-├── THIRD_PARTY_NOTICES.md            # Atribusi sumber eksternal
+├── AGENTS.md / CLAUDE.md / GEMINI.md         # Instruksi otomatis lintas AI coding agent
+├── LICENSE                                   # Informasi Lisensi (MIT & CC BY-NC 4.0)
+├── THIRD_PARTY_NOTICES.md                    # Atribusi sumber eksternal
 └── README.md
 ```
+
+---
+
+## 📌 Ketentuan Baku Otomatis (Skripsi & Jurnal)
+
+Setiap kali repositori ini dipasang ke ruang kerja agen AI dan pengguna meminta penyusunan **skripsi, tugas akhir, atau artikel jurnal**, asisten akan secara otomatis menerapkan standar wajib berikut:
+
+1. **Alur Topik & Outline:** Analisis artikel referensi (5 alternatif topik) → pilih **1 topik terbaik** → **justifikasi ≤ 50 kata** & **ringkasan ±250 kata** → **outline sistematis**.
+2. **Standar Literatur Scopus Q1/Q2 & Sitasi APA 7:** Pertanyaan pencarian dalam Bahasa Inggris per subbab; minimal **5 referensi** per pertanyaan dari jurnal **Scopus Q1/Q2** berbahasa Inggris, **Open Access & aktif (tidak *discontinued*)**, terbitan **2021–2026**, dengan **≥5 sitasi**; format keluaran berupa 1 paragraf 150 kata berlabel **`Citation:`** diikuti daftar pustaka ber-DOI berlabel **`Bibliography:`** (tanpa memisahkan daftar artikel terpilih).
+3. **Target Panjang & Substansi:** **BAB I** (±1.500 kata), **BAB II** (±2.500 kata), **BAB III** (±2.500 kata), **BAB IV** (±2.500 kata), **BAB V** (±750 kata), dan **Abstrak** (±250 kata dalam 1 paragraf + ±5 kata kunci).
 
 ---
 

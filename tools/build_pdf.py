@@ -275,16 +275,10 @@ FRONT_BEFORE_TOC = f"""<!-- COVER -->
     [NAMA PENULIS DISINI]. [Nomor Induk Disini]. [Judul Penelitian / Karya Ilmiah Disini].
   </p>
   <p>
-    <strong>[Paragraf 1 - Latar Belakang &amp; Masalah (~15–20%):]</strong> Jelaskan konteks permasalahan nyata yang mendasari penelitian, keterbatasan solusi atau studi sebelumnya (<em>research gap</em>), serta urgensi pendekatan yang diusulkan.
-  </p>
-  <p>
-    <strong>[Paragraf 2 - Metodologi &amp; Desain Eksperimen (~20–30%):]</strong> Uraikan karakteristik dataset atau objek penelitian, tahapan pra-pemrosesan/rekayasa sistem, metode utama yang dirancang, serta skema validasi atau protokol pengujian yang digunakan secara terukur.
-  </p>
-  <p>
-    <strong>[Paragraf 3 - Hasil Kuantitatif &amp; Simpulan (~50%):]</strong> Sajikan temuan kuantitatif utama (misalnya metrik kinerja, efisiensi, hasil uji hipotesis/statistik, perbandingan terhadap metode pembanding), makna dari temuan tersebut, serta simpulan ringkas kontribusi penelitian.
+    <strong>[Target Wajib: ±250 kata dalam 1 paragraf utuh.]</strong> Susun dalam satu paragraf ringkas yang mencakup: (1) masalah penelitian, (2) tujuan penelitian, (3) metode yang digunakan, (4) hasil utama kuantitatif/empiris, (5) interpretasi hasil, (6) simpulan, serta (7) implikasi ilmiah maupun praktis penelitian.
   </p>
   <p class="no-indent" style="margin-top: 1rem;">
-    <strong>Kata Kunci:</strong> [Kata Kunci 1], [Kata Kunci 2], [Kata Kunci 3], [Kata Kunci 4], [Kata Kunci 5].
+    <strong>Kata Kunci:</strong> [Kata Kunci 1], [Kata Kunci 2], [Kata Kunci 3], [Kata Kunci 4], [Kata Kunci 5] <em>(±5 kata kunci)</em>.
   </p>
 </div>
 
@@ -295,16 +289,10 @@ FRONT_BEFORE_TOC = f"""<!-- COVER -->
     [AUTHOR NAME]. [Student ID]. [English Title of Research / Thesis].
   </p>
   <p>
-    <strong>[Background &amp; Problem Statement (~15–20%):]</strong> Describe the real-world research context, existing methodological limitations or literature gaps, and the primary objective of the proposed approach.
-  </p>
-  <p>
-    <strong>[Methodology &amp; Experimental Protocol (~20–30%):]</strong> Detail the dataset or system specifications, preprocessing and engineering workflow, proposed architecture or method, and validation design applied in the study.
-  </p>
-  <p>
-    <strong>[Key Findings &amp; Conclusion (~50%):]</strong> Report concrete quantitative evaluation metrics, baseline comparisons, statistical significance verification, and the main conclusion highlighting the scientific contribution.
+    <strong>[Target: ±250 words in 1 unified paragraph.]</strong> Present a single cohesive paragraph covering the research problem, objectives, methodology, primary empirical results, interpretation, conclusion, and implications of the study.
   </p>
   <p class="no-indent" style="margin-top: 1rem;">
-    <strong>Keywords:</strong> [Keyword 1], [Keyword 2], [Keyword 3], [Keyword 4], [Keyword 5].
+    <strong>Keywords:</strong> [Keyword 1], [Keyword 2], [Keyword 3], [Keyword 4], [Keyword 5] <em>(±5 keywords)</em>.
   </p>
 </div>
 """
@@ -314,10 +302,10 @@ BODY_HTML = """<!-- BAB I PENDAHULUAN -->
   <h1 class="chapter">BAB I<br>PENDAHULUAN</h1>
   <h2>1.1 Latar Belakang Masalah</h2>
   <p>
-    Latar belakang disusun secara deduktif (alur piramida terbalik) yang mengantarkan pembaca dari konteks makro menuju permasalahan spesifik yang diteliti. Setiap klaim empiris dan angka statistik wajib didukung referensi primer bereputasi.
+    <strong>[Target Panjang BAB I: ±1.500 kata.]</strong> Latar belakang disusun mengikuti struktur outline, menggunakan kutipan format APA 7 <code>(Author et al., YEAR)</code> dari jurnal internasional bereputasi (Scopus Q1/Q2, Open Access aktif, terbitan 2021–2026, minimal 5 sitasi), serta menjaga kesinambungan masalah, tujuan, kontribusi, dan ruang lingkup penelitian.
   </p>
   <div class="guide-box">
-    <strong>Panduan Substansi:</strong> (1) Konteks bidang &amp; urgensi masalah, (2) Kondisi ideal vs kesenjangan fakta di lapangan, (3) Kajian studi terdahulu &amp; keterbatasan metode yang ada (<em>research gap</em>), (4) Rasionalitas pemilihan pendekatan/metode usulan, (5) Nilai kebaruan (<em>novelty</em>) dan kontribusi terukur, serta (6) Penegasan fokus judul penelitian.
+    <strong>Panduan Wajib Pra-Penulisan &amp; Literatur:</strong> Lakukan pemetaan artikel rujukan (5 alternatif topik → pilih tepat 1 topik terbaik → justifikasi maks. 50 kata &amp; ringkasan maks. ±250 kata), susun <em>literature search questions</em> berbahasa Inggris per subbab, lalu sintesiskan minimal 5 referensi ke dalam 1 paragraf 150 kata berlabel <code>Citation:</code> dan daftar ber-DOI berlabel <code>Bibliography:</code> tanpa menuliskan daftar artikel terpilih secara terpisah.
   </div>
 
   <h2>1.2 Identifikasi Masalah</h2>
@@ -361,7 +349,7 @@ BODY_HTML = """<!-- BAB I PENDAHULUAN -->
   <h1 class="chapter">BAB II<br>TINJAUAN PUSTAKA DAN LANDASAN TEORI</h1>
   <h2>2.1 Tinjauan Pustaka (Penelitian Terdahulu)</h2>
   <p>
-    Bagian ini mensintesis secara kritis penelitian terdahulu yang relevan (disarankan minimal 10–15 artikel jurnal bereputasi 5 tahun terakhir), membandingkan metode, dataset, temuan, serta celah penelitian yang menjadi dasar kebaruan studi ini.
+    <strong>[Target Panjang BAB II: ±2.500 kata.]</strong> Bahas konsep, teori, perkembangan literatur, penelitian terdahulu, <em>gap</em> penelitian, serta hubungan literatur dengan penelitian ini secara sintetis dan akademik menggunakan kutipan APA 7 <code>(Author et al., YEAR)</code> dari jurnal Scopus Q1/Q2 (2021–2026, Open Access aktif, minimal 5 sitasi).
   </p>
   <p class="caption">Tabel 2.1 Matriks Perbandingan Penelitian Terdahulu</p>
   <table class="academic">
@@ -411,7 +399,7 @@ BODY_HTML = """<!-- BAB I PENDAHULUAN -->
   <h1 class="chapter">BAB III<br>METODOLOGI PENELITIAN</h1>
   <h2>3.1 Kerangka Kerja Penelitian</h2>
   <p>
-    Jelaskan tahapan sistematis pelaksanaan penelitian (misalnya adaptasi kerangka kerja eksperimental, siklus rekayasa perangkat lunak, atau tahapan analisis kuantitatif) mulai dari perumusan masalah hingga evaluasi akhir.
+    <strong>[Target Panjang BAB III: ±2.500 kata.]</strong> Uraikan secara operasional dan sistematis keterkaitan antara rumusan masalah, tujuan, data, metode, eksperimen, pengujian, dan evaluasi penelitian yang didukung sitasi metodologi terverifikasi <code>(Author et al., YEAR)</code>.
   </p>
 
   <h2>3.2 Pengumpulan dan Karakteristik Data</h2>
@@ -465,7 +453,7 @@ BODY_HTML = """<!-- BAB I PENDAHULUAN -->
   <h1 class="chapter">BAB IV<br>HASIL DAN PEMBAHASAN</h1>
   <h2>4.1 Gambaran Umum Hasil Implementasi</h2>
   <p>
-    Sajikan ringkasan statistik deskriptif data atau hasil implementasi sistem pada lingkungan uji yang telah didefinisikan pada Bab III. Sertakan spesifikasi perangkat keras dan perangkat lunak yang digunakan selama eksperimen.
+    <strong>[Target Panjang BAB IV: ±2.500 kata.]</strong> Sajikan hasil penelitian secara objektif (didukung data, tabel, grafik, dan <em>confusion matrix</em> bila relevan), interpretasikan temuan, jawab seluruh tujuan penelitian, serta bandingkan temuan terhadap penelitian terdahulu <code>(Author et al., YEAR)</code>.
   </p>
 
   <h2>4.2 Hasil Evaluasi Kinerja dan Perbandingan</h2>
@@ -524,7 +512,7 @@ BODY_HTML = """<!-- BAB I PENDAHULUAN -->
   <h1 class="chapter">BAB V<br>KESIMPULAN DAN SARAN</h1>
   <h2>5.1 Kesimpulan</h2>
   <p>
-    Kesimpulan menjawab seluruh butir rumusan masalah pada Bab I secara langsung, padat, dan berbasis bukti kuantitatif dari Bab IV (proporsi 60–70% dari Bab V). Hindari pengulangan teori umum atau klaim di luar data pengujian.
+    <strong>[Target Panjang BAB V: ±750 kata.]</strong> Simpulan menjawab langsung seluruh tujuan dan <em>research question</em> serta menjelaskan makna dan kontribusi temuan penelitian secara ringkas berbasis bukti objektif.
   </p>
   <ol>
     <li>[Simpulan 1: Menjawab rumusan masalah pertama terkait implementasi dan arsitektur yang berhasil dibangun.]</li>
@@ -545,7 +533,7 @@ BODY_HTML = """<!-- BAB I PENDAHULUAN -->
 <div class="page-break">
   <h1 class="chapter">DAFTAR PUSTAKA</h1>
   <p class="no-indent" style="font-size: 11pt; margin-bottom: 0.8rem;">
-    Susun daftar pustaka secara alfabetis menggunakan format standar internasional (APA Edisi ke-7 atau IEEE), pastikan setiap entri disitasi dalam naskah dan dilengkapi tautan DOI resmi bila tersedia.
+    Susun daftar pustaka secara alfabetis menggunakan format <strong>APA 7</strong> dan <strong>wajib mencantumkan DOI</strong> resmi. Setiap referensi wajib berasal dari jurnal ilmiah internasional terindeks <strong>Scopus Q1 / Q2</strong>, berbahasa Inggris, <em>Open Access</em> dan masih aktif (tidak <em>discontinued</em>), terbit dalam 5 tahun terakhir (2021–2026), serta memiliki minimal 5 sitasi relevan.
   </p>
   <p class="no-indent" style="padding-left: 1cm; text-indent: -1cm;">
     Penulis, A. A., &amp; Penulis, B. B. (Tahun). Judul artikel penelitian ilmiah. <em>Nama Jurnal Ilmiah Bereputasi</em>, Volume(Nomor), Halaman awal–akhir. https://doi.org/10.xxxx/xxxxx
