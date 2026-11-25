@@ -9,7 +9,7 @@ Repositori ini bersifat **universal** (tidak terikat pada satu topik penelitian,
 
 ---
 
-## 🎯 Kemampuan Utama (*Core Capabilities*)
+## Kemampuan Utama (*Core Capabilities*)
 
 1. **Eksplorasi Riset & Sintesis Literatur Sistematis**
    - Pemetaan celah penelitian (*research gap*), perumusan pertanyaan riset, serta perancangan metodologi kuantitatif, kualitatif, maupun eksperimental.
@@ -30,7 +30,7 @@ Repositori ini bersifat **universal** (tidak terikat pada satu topik penelitian,
 
 ---
 
-## 🧩 Daftar Skill AI yang Terintegrasi
+## Daftar Skill yang Terintegrasi
 
 Seluruh modul skill tersimpan di `.agents/skills/` (serta `.skills/` untuk kompatibilitas lintas *agent*) sehingga otomatis dikenali oleh **Google Antigravity**, **Claude Code**, dan asisten AI berbasis skill lainnya:
 
@@ -46,7 +46,7 @@ Seluruh modul skill tersimpan di `.agents/skills/` (serta `.skills/` untuk kompa
 
 ---
 
-## 📁 Struktur Direktori
+## Struktur Direktori
 
 ```text
 academic-assistant/
@@ -80,7 +80,7 @@ academic-assistant/
 
 ---
 
-## 📌 Ketentuan Baku Otomatis (Skripsi & Jurnal)
+## Ketentuan Otomatis (Skripsi & Jurnal)
 
 Setiap kali repositori ini dipasang ke ruang kerja agen AI dan pengguna meminta penyusunan **skripsi, tugas akhir, atau artikel jurnal**, asisten akan secara otomatis menerapkan standar wajib berikut:
 
@@ -90,7 +90,7 @@ Setiap kali repositori ini dipasang ke ruang kerja agen AI dan pengguna meminta 
 
 ---
 
-## 🚀 Cara Penggunaan
+## Cara Penggunaan
 
 1. **Kloning Repositori**
    ```bash
@@ -104,7 +104,7 @@ Setiap kali repositori ini dipasang ke ruang kerja agen AI dan pengguna meminta 
 
 ---
 
-## 📄 Lisensi & Atribusi
+## Lisensi & Atribusi
 
 * Template dokumen (`templates/`), utilitas generator (`tools/`), serta modul `menulis-skripsi` dan `skripsi-to-ieee` dirilis di bawah lisensi **MIT License**.
 * Modul `academic-paper`, `academic-paper-reviewer`, `academic-pipeline`, `deep-research`, `sr-screener`, dan `shared` berasal dari [**Imbad0202/academic-research-skills**](https://github.com/Imbad0202/academic-research-skills) (DOI: [10.5281/zenodo.20696614](https://doi.org/10.5281/zenodo.20696614)) karya Cheng-I Wu di bawah lisensi **CC BY-NC 4.0** (lihat [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)).
