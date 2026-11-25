@@ -1,0 +1,130 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{url}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Paper Title Based on Your Skripsi / Thesis Research*\\
+{\footnotesize \textsuperscript{*}Note: Sub-titles are not recommended for IEEE papers. Keep titles concise and informative.}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} First Author}
+\IEEEauthorblockA{\textit{Department of Electrical / Computer Engineering} \\
+\textit{University / Institute Name}\\
+City, Country \\
+email@institution.ac.id}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Second Author}
+\IEEEauthorblockA{\textit{Department of Electrical / Computer Engineering} \\
+\textit{University / Institute Name}\\
+City, Country \\
+second.author@institution.ac.id}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Supervisor / Advisor}
+\IEEEauthorblockA{\textit{Department of Electrical / Computer Engineering} \\
+\textit{University / Institute Name}\\
+City, Country \\
+advisor@institution.ac.id}
+}
+
+\maketitle
+
+\begin{abstract}
+This electronic document is a template for IEEE conference/journal papers adapted from undergraduate or graduate theses. The abstract must be concise (150--250 words) and state clearly: (1) context and background, (2) the core problem or research gap, (3) the proposed method or architectural novelty, (4) key quantitative findings, and (5) the practical significance or conclusion. Do not cite references, do not include equations, and avoid non-standard acronyms in the abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Artificial intelligence, Convolutional neural networks, Edge computing, Performance evaluation, Thesis conversion
+\end{IEEEkeywords}
+
+\section{Introduction}
+Undergraduate and master's theses often contain substantial foundational background, extensive textbook definitions, and detailed implementation logs. In contrast, an IEEE paper demands an immediate, sharp focus on the research problem, state-of-the-art context, and specific novel contributions.
+
+The introduction should generally follow a four-part structure:
+\begin{enumerate}
+    \item \textbf{Broad Domain and Significance:} Establish why the domain matters in real-world or theoretical contexts.
+    \item \textbf{Problem Statement and Research Gap:} Explain existing solutions and pinpoint precisely where they fall short.
+    \item \textbf{Proposed Solution:} Summarize the proposed methodology, architecture, or algorithmic contribution.
+    \item \textbf{Summary of Contributions:} Explicitly enumerate the key contributions of this paper (usually 3 bullet points).
+\end{enumerate}
+
+The remainder of this paper is organized as follows: Section~\ref{sec:related_work} reviews related literature. Section~\ref{sec:methodology} delineates the proposed methodology and mathematical formulations. Section~\ref{sec:results} presents the experimental setup, comparative evaluations, and discussion. Finally, Section~\ref{sec:conclusion} concludes the paper and outlines future directions.
+
+\section{Related Work}
+\label{sec:related_work}
+When converting Chapter 2 (Tinjauan Pustaka) of a thesis, remove general textbook definitions (e.g., standard definitions of programming languages, microcontrollers, or general database concepts). Focus exclusively on peer-reviewed studies published within the last 3--5 years.
+
+Synthesize literature comparatively rather than listing summaries sequentially. For example, discuss trade-offs in accuracy, latency, computational complexity, and applicability to constrained environments. Cite works using numerical brackets, such as Vaswani \textit{et al.}~\cite{vaswani2017attention} and He \textit{et al.}~\cite{he2016deep}.
+
+\section{Proposed Methodology}
+\label{sec:methodology}
+This section condenses Chapter 3 (Metodologi Penelitian) of the thesis. Omit trivial software engineering artifacts such as basic CRUD flows, generic entity-relationship diagrams, or standard login processes. Instead, detail the algorithmic novelty, data processing pipeline, and mathematical models.
+
+\subsection{System Architecture}
+Provide a high-resolution, clear conceptual diagram of the proposed pipeline. Refer to all figures explicitly in the text before their visual placement.
+
+\begin{figure}[htbp]
+\centerline{\fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}}
+\caption{System block diagram illustrating data acquisition, preprocessing, feature extraction, and classification stages.}
+\label{fig:architecture}
+\end{figure}
+
+\subsection{Mathematical Formulation}
+Number all equations consecutively with equation numbers in parentheses flush with the right margin. Define all symbols immediately following the equation.
+\begin{equation}
+y = f(\mathbf{W} \cdot \mathbf{x} + b),
+\label{eq:linear_model}
+\end{equation}
+where $\mathbf{x} \in \mathbb{R}^d$ denotes the input feature vector, $\mathbf{W}$ represents the weight matrix, $b$ is the bias term, and $f(\cdot)$ is the non-linear activation function. Refer to equations as ``\eqref{eq:linear_model}'' or ``(1)''.
+
+\section{Experimental Setup and Results}
+\label{sec:results}
+In Chapter 4 of a thesis, raw survey tables or lengthy log outputs are common. In an IEEE paper, condense this data into aggregate performance metrics (e.g., Accuracy, F1-score, Inference Time, BLEU/ROUGE score, or SNR).
+
+\subsection{Benchmark Dataset and Hyperparameters}
+Describe the datasets used (train/validation/test split ratios), hardware specifications (e.g., NVIDIA RTX 4090, 64 GB RAM), learning rate, batch size, and optimizer configurations.
+
+\subsection{Performance Evaluation and Comparison}
+Always benchmark your proposed method against competitive baselines or existing literature. 
+
+\begin{table}[htbp]
+\caption{Comparison of Model Performance on Test Dataset}
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model Architecture} & \textbf{Accuracy (\%)} & \textbf{Precision} & \textbf{Recall} & \textbf{Latency (ms)} \\
+\midrule
+Baseline CNN & 87.4 & 0.85 & 0.86 & 12.4 \\
+ResNet-50 & 92.1 & 0.91 & 0.90 & 28.6 \\
+MobileNetV3 & 90.8 & 0.89 & 0.91 & \textbf{8.2} \\
+\textbf{Proposed Method} & \textbf{95.7} & \textbf{0.95} & \textbf{0.96} & 10.5 \\
+\bottomrule
+\end{tabular}
+\label{tab:performance}
+\end{center}
+\end{table}
+
+As shown in Table~\ref{tab:performance}, the proposed framework achieves a 3.6\% higher accuracy compared to ResNet-50 while maintaining a low inference latency suitable for edge deployment.
+
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+The conclusion must not merely restate the abstract. It should summarize the core achievements, confirm whether the research questions were answered, acknowledge experimental limitations, and suggest concrete directions for future research.
+
+\section*{Acknowledgment}
+The authors would like to thank the Department of Electrical Engineering at Universitas X and the Ministry of Education, Culture, Research, and Technology of the Republic of Indonesia for supporting this research under Grant No. XXX/2026.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

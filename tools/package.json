@@ -1,0 +1,8 @@
+{
+  "name": "academic-assistant-tools",
+  "version": "1.0.0",
+  "description": "Automated academic thesis template builders (DOCX & PDF)",
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}
